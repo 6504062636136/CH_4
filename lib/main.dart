@@ -29,7 +29,6 @@ class MyApp extends StatelessWidget {
                 children: [
                   const SizedBox(height: 50),
 
-                  // Title
                   const Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
@@ -61,7 +60,7 @@ class MyApp extends StatelessWidget {
                         image: NetworkImage(
                           'https://veho.studio.crasman.cloud/pub/system/files/new-vehicles/100/1000303674/b396990e590da1_1000303674.jpg?c=1920x1080',
                         ),
-                        fit: BoxFit.cover, // ปรับขนาดให้พอดีกับพื้นที่
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -86,7 +85,7 @@ class MyApp extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
 
-                        // ชื่อสถานีชาร์จ
+                        // ชื่อสถานี
                         const Row(
                           children: [
                             Icon(Icons.location_pin),
@@ -136,7 +135,7 @@ class MyApp extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                  // Battery Percentage and Battery Health Status side by side
+                  // Battery Percentage and Health Status
                   Row(
                     children: [
                       Expanded(
@@ -199,7 +198,7 @@ class MyApp extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                'Good', // เปลี่ยนเป็นสถานะคุณภาพแบตเตอรี่จริง
+                                'Good',
                                 style: TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
